@@ -1,0 +1,331 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--blue:#185FA5;--blue-lt:#E6F1FB;--blue-dk:#0C447C;--gold:#BA7517;--gold-lt:#FAEEDA;--green:#3B6D11;--green-lt:#EAF3DE;--red:#A32D2D;--red-lt:#FCEBEB;--b:0.5px solid var(--color-border-tertiary)}
+.wrap{padding:1.5rem 0;font-family:var(--font-sans)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:1.5rem}
+.tab{padding:6px 14px;border-radius:20px;border:var(--b);font-size:13px;cursor:pointer;background:var(--color-background-primary);color:var(--color-text-secondary);transition:all .15s}
+.tab.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.sec{display:none}.sec.on{display:block}
+.label{font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:1rem}
+.card{background:var(--color-background-primary);border:var(--b);border-radius:var(--border-radius-lg);padding:1rem 1.25rem;margin-bottom:10px}
+.card.bl{border-left:3px solid var(--blue)}
+.card.go{border-left:3px solid var(--gold)}
+.card.gr{border-left:3px solid #639922}
+.card.re{border-left:3px solid var(--red)}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.pill{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:500;margin-bottom:6px}
+.pb{background:var(--blue-lt);color:var(--blue-dk)}
+.pg{background:var(--gold-lt);color:#633806}
+.pgr{background:var(--green-lt);color:var(--green)}
+.pr{background:var(--red-lt);color:var(--red)}
+.pn{background:var(--color-background-secondary);color:var(--color-text-secondary)}
+h3{font-size:14px;font-weight:500;color:var(--color-text-primary);margin-bottom:5px}
+p,li{font-size:13px;color:var(--color-text-secondary);line-height:1.6}
+ul{padding-left:14px}
+li{margin-bottom:3px}
+hr{border:none;border-top:var(--b);margin:1.25rem 0}
+.tl{display:flex;flex-direction:column;gap:0}
+.tli{display:flex;gap:12px}
+.tll{display:flex;flex-direction:column;align-items:center;width:32px;flex-shrink:0}
+.dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;margin-top:5px}
+.line{width:1px;background:var(--color-border-tertiary);flex:1;min-height:24px}
+.tlc{padding-bottom:1.25rem;flex:1}
+.wk{font-size:11px;color:var(--color-text-tertiary);font-weight:500;margin-bottom:2px}
+.tlt{font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:3px}
+.tld{font-size:12px;color:var(--color-text-secondary);line-height:1.5}
+.badge{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:500;margin:2px}
+.gap-row{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:var(--b)}
+.gap-row:last-child{border-bottom:none}
+.gap-icon{width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0}
+.kw{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:6px 10px;font-size:12px;color:var(--color-text-secondary);margin-bottom:5px}
+.kw strong{color:var(--color-text-primary);font-weight:500;font-size:12px}
+.metric{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:10px 12px}
+.mv{font-size:20px;font-weight:500;color:var(--color-text-primary)}
+.ml{font-size:11px;color:var(--color-text-tertiary);margin-bottom:3px}
+.ms{font-size:11px;color:var(--color-text-tertiary);margin-top:1px}
+.mg{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:1rem}
+.cta{display:inline-block;padding:8px 16px;background:var(--blue);color:#fff;border-radius:var(--border-radius-md);font-size:13px;font-weight:500;cursor:pointer;border:none;margin-top:1rem}
+</style>
+
+<h2 class="sr-only">Tailored content strategy and timeline for Clear Capital (theclearcap.com), an MCA business funding provider based in Fort Lauderdale serving trucking, construction, medical, and restaurant businesses nationwide</h2>
+
+<div class="wrap">
+<div class="tabs">
+  <div class="tab on" onclick="sw('audit')">Site Audit</div>
+  <div class="tab" onclick="sw('keywords')">Keywords</div>
+  <div class="tab" onclick="sw('content')">Content Plan</div>
+  <div class="tab" onclick="sw('timeline')">Timeline</div>
+  <div class="tab" onclick="sw('promo')">Promotion</div>
+</div>
+
+<!-- AUDIT -->
+<div id="audit" class="sec on">
+  <p class="label">What we found on theclearcap.com</p>
+  <div class="g2">
+    <div class="card gr">
+      <span class="pill pgr">Strengths</span>
+      <ul>
+        <li>Strong value prop above the fold — "$5M in 24 hours"</li>
+        <li>4 industry pages already live (trucking, construction, medical, restaurants)</li>
+        <li>Interactive loan calculator — excellent for engagement & time-on-page</li>
+        <li>Social proof: named client testimonials with city & industry</li>
+        <li>FAQ section covering key objections (credit, speed, states)</li>
+        <li>Clear CTAs: "Get Funded," phone number, apply modal</li>
+        <li>Meta tags, OG tags, and robots properly configured</li>
+      </ul>
+    </div>
+    <div class="card re">
+      <span class="pill pr">Critical Gaps</span>
+      <ul>
+        <li>Blog returns 404 — zero content marketing today</li>
+        <li>No indexed blog posts found in search results</li>
+        <li>No organic rankings for target keywords yet</li>
+        <li>No lead magnet or gated content for email capture</li>
+        <li>No email nurture sequence visible</li>
+        <li>No LinkedIn or social content found</li>
+        <li>Competitor MCA sites already dominating informational queries</li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+  <p class="label">Opportunity summary</p>
+  <div class="g3">
+    <div class="card bl">
+      <span class="pill pb">SEO</span>
+      <h3>Zero competition from your own content</h3>
+      <p>Your site is technically solid but publishing nothing. Every week without a blog is lost ground to MCA competitors who already rank for your target terms.</p>
+    </div>
+    <div class="card go">
+      <span class="pill pg">Lead gen</span>
+      <h3>Traffic but no nurture</h3>
+      <p>Your apply modal is well-designed, but visitors who aren't ready to apply have no reason to give you their email. A free resource changes that.</p>
+    </div>
+    <div class="card">
+      <span class="pill pn">Authority</span>
+      <h3>Great story, not yet told</h3>
+      <p>"Two founders who got tired of watching good businesses get treated like numbers" is compelling — but it lives only on one homepage. Content amplifies it.</p>
+    </div>
+  </div>
+</div>
+
+<!-- KEYWORDS -->
+<div id="keywords" class="sec">
+  <p class="label">Keyword strategy — built for your 4 industries + MCA niche</p>
+  <div class="g2">
+    <div>
+      <div class="card bl" style="margin-bottom:10px">
+        <span class="pill pb">Pillar keywords (high priority)</span>
+        <div class="kw"><strong>MCA for trucking companies</strong> — informational + commercial, low competition</div>
+        <div class="kw"><strong>merchant cash advance for restaurants</strong> — buyers actively searching</div>
+        <div class="kw"><strong>construction business funding fast</strong> — high intent, underserved</div>
+        <div class="kw"><strong>medical supplier financing options</strong> — niche, low competition</div>
+        <div class="kw"><strong>business funding no hard credit check</strong> — your core differentiator as a query</div>
+        <div class="kw"><strong>MCA vs business loan</strong> — high volume, top-of-funnel</div>
+      </div>
+      <div class="card go">
+        <span class="pill pg">Local + state targeting</span>
+        <div class="kw"><strong>business funding Fort Lauderdale FL</strong> — local anchor</div>
+        <div class="kw"><strong>small business loans Florida no credit check</strong></div>
+        <div class="kw"><strong>trucking company funding Texas</strong> — state-level pages</div>
+        <div class="kw"><strong>restaurant funding New York</strong> — city/state long-tail</div>
+      </div>
+    </div>
+    <div>
+      <div class="card gr" style="margin-bottom:10px">
+        <span class="pill pgr">Informational (SEO traffic)</span>
+        <div class="kw"><strong>how does a merchant cash advance work</strong></div>
+        <div class="kw"><strong>what is a factor rate MCA</strong></div>
+        <div class="kw"><strong>how to get business funding with bad credit</strong></div>
+        <div class="kw"><strong>MCA vs SBA loan which is better</strong></div>
+        <div class="kw"><strong>how to manage cash flow trucking business</strong></div>
+        <div class="kw"><strong>restaurant slow season working capital</strong></div>
+      </div>
+      <div class="card">
+        <span class="pill pn">Transactional (conversion)</span>
+        <div class="kw"><strong>apply for merchant cash advance online</strong></div>
+        <div class="kw"><strong>fast business funding $100k same day</strong></div>
+        <div class="kw"><strong>MCA funding all 50 states</strong></div>
+        <div class="kw"><strong>business cash advance no doc</strong></div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <p class="label">Content-to-keyword mapping</p>
+  <div class="g3">
+    <div class="card"><span class="pill pb">Blog posts</span><p>Target informational keywords. Goal: rank, build trust, drive to industry pages.</p></div>
+    <div class="card"><span class="pill pg">Industry pages</span><p>Already live — optimize existing 4 pages with keyword-rich H1s, FAQs, and internal links to blog.</p></div>
+    <div class="card"><span class="pill pn">State/city pages</span><p>Build 10 state-level landing pages (TX, NY, CA, FL, GA, OH, IL, NC, AZ, PA) for local SEO lift.</p></div>
+  </div>
+</div>
+
+<!-- CONTENT PLAN -->
+<div id="content" class="sec">
+  <p class="label">Content types tailored to Clear Capital's audiences</p>
+  <div class="g2">
+    <div class="card bl">
+      <span class="pill pb">For trucking / construction / restaurants / medical</span>
+      <h3>Industry-specific blog posts</h3>
+      <ul>
+        <li>"How Trucking Companies Get Funded Between Loads" (1,800 words)</li>
+        <li>"Why Restaurants Get Turned Down by Banks — And What to Do" (1,500 words)</li>
+        <li>"Construction Cash Flow: Bridging the 60-Day Gap" (2,000 words)</li>
+        <li>"Medical Supply Financing: What Owners Need to Know" (1,600 words)</li>
+      </ul>
+    </div>
+    <div class="card go">
+      <span class="pill pg">For small biz owners + B2B leads</span>
+      <h3>Educational guides (gated)</h3>
+      <ul>
+        <li>"The Business Owner's Guide to MCA Funding" — gated PDF, email capture</li>
+        <li>"Cash Flow Survival Checklist for Small Business" — free download</li>
+        <li>"MCA vs SBA vs Line of Credit: Which Is Right for You?" — comparison guide</li>
+      </ul>
+    </div>
+  </div>
+  <div class="g2" style="margin-top:10px">
+    <div class="card gr">
+      <span class="pill pgr">Trust-builders (authority)</span>
+      <ul>
+        <li>Expand testimonials into full case studies (Roberto, Tanya, Darnell)</li>
+        <li>"State of Small Business Funding" — annual data report (generates backlinks)</li>
+        <li>FAQ expansion: 15+ Q&As targeting long-tail voice search queries</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="pill pn">Content standards for every post</span>
+      <ul>
+        <li>Flesch reading score 60–70 (plain English, no jargon)</li>
+        <li>Primary keyword in title, first 100 words, meta description</li>
+        <li>Internal link to an industry page and apply CTA in every post</li>
+        <li>1 inline CTA mid-article ("See what you qualify for →")</li>
+        <li>Author byline — builds E-E-A-T trust signals for Google</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- TIMELINE -->
+<div id="timeline" class="sec">
+  <p class="label">Week-by-week launch timeline</p>
+  <div class="tl">
+    <div class="tli">
+      <div class="tll"><div class="dot" style="background:var(--red)"></div><div class="line"></div></div>
+      <div class="tlc">
+        <div class="wk">Week 1 — Fix the foundation</div>
+        <div class="tlt">Repair the blog, set up tracking</div>
+        <div class="tld">Fix the blog 404 (critical — nothing else works without this). Install GA4 + Google Search Console. Set up conversion events: apply modal submit, phone tap, call clicks. Connect a blog CMS (Webflow, WordPress, or Framer). Submit sitemap to Google.</div>
+      </div>
+    </div>
+    <div class="tli">
+      <div class="tll"><div class="dot" style="background:var(--blue)"></div><div class="line"></div></div>
+      <div class="tlc">
+        <div class="wk">Weeks 2–3 — First content wave</div>
+        <div class="tlt">Publish 4 industry blog posts</div>
+        <div class="tld">Publish one post per industry: trucking, construction, restaurant, medical. Each 1,500–2,000 words. Optimize existing 4 industry pages with keyword-rich H1s and internal links to the new posts. Submit all URLs for indexing via Search Console.</div>
+      </div>
+    </div>
+    <div class="tli">
+      <div class="tll"><div class="dot" style="background:var(--blue)"></div><div class="line"></div></div>
+      <div class="tlc">
+        <div class="wk">Week 4 — Lead magnet launch</div>
+        <div class="tlt">Create first gated asset + email capture</div>
+        <div class="tld">Build "The Business Owner's Guide to MCA Funding" as a PDF. Add email capture gate on blog sidebar and a dedicated landing page. Set up 3-email welcome sequence in Mailchimp/Klaviyo: email 1 delivers the guide, email 2 explains MCA vs loans, email 3 pushes the apply CTA.</div>
+      </div>
+    </div>
+    <div class="tli">
+      <div class="tll"><div class="dot" style="background:var(--gold)"></div><div class="line"></div></div>
+      <div class="tlc">
+        <div class="wk">Month 2 — Authority mode</div>
+        <div class="tlt">2 deep-dive guides + LinkedIn launch</div>
+        <div class="tld">Publish "MCA vs SBA vs Line of Credit" comparison guide (3,000 words — this will rank). Launch LinkedIn company page. Post 3x/week: pull stats and insights from your blog posts into carousels. Reach out to 5 finance and trucking/restaurant publications for guest post opportunities.</div>
+      </div>
+    </div>
+    <div class="tli">
+      <div class="tll"><div class="dot" style="background:var(--gold)"></div><div class="line"></div></div>
+      <div class="tlc">
+        <div class="wk">Month 2 continued</div>
+        <div class="tlt">Build 5 state landing pages</div>
+        <div class="tld">Launch geo-targeted pages for TX, FL, NY, GA, CA — your likely highest-volume states. Each page targets "[state] business funding fast" and links to your industry pages. This creates local SEO lift with minimal content effort.</div>
+      </div>
+    </div>
+    <div class="tli">
+      <div class="tll"><div class="dot" style="background:var(--green)"></div><div class="line"></div></div>
+      <div class="tlc">
+        <div class="wk">Month 3 — Optimize and scale</div>
+        <div class="tlt">Audit, A/B test, and expand distribution</div>
+        <div class="tld">Review GA4: which posts drive most apply clicks? Double down on those topics. A/B test 2 CTA variants on top blog pages. Expand state pages to 10 total. Publish 2 case studies based on Roberto, Tanya, and Darnell. Launch monthly newsletter to your growing email list.</div>
+      </div>
+    </div>
+    <div class="tli">
+      <div class="tll"><div class="dot" style="background:var(--green)"></div></div>
+      <div class="tlc">
+        <div class="wk">Month 3 continued</div>
+        <div class="tlt">Outreach and backlink campaign</div>
+        <div class="tld">Target 3 guest posts published on industry blogs (trucking associations, restaurant biz publications, construction trade sites). Each links back to Clear Capital. Pitch your "State of Small Business Funding" report to finance journalists for earned media coverage.</div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <p class="label">90-day milestone targets</p>
+  <div class="mg">
+    <div class="metric"><div class="ml">Blog posts live</div><div class="mv">12+</div><div class="ms">by end of month 3</div></div>
+    <div class="metric"><div class="ml">State pages live</div><div class="mv">10</div><div class="ms">geo SEO coverage</div></div>
+    <div class="metric"><div class="ml">Email subscribers</div><div class="mv">200+</div><div class="ms">from gated asset</div></div>
+    <div class="metric"><div class="ml">Organic sessions</div><div class="mv">+50%</div><div class="ms">vs current baseline</div></div>
+  </div>
+</div>
+
+<!-- PROMO -->
+<div id="promo" class="sec">
+  <p class="label">Promotion channels — matched to Clear Capital's audience</p>
+  <div class="card bl" style="margin-bottom:10px">
+    <span class="pill pb">LinkedIn (priority #1)</span>
+    <h3>Your decision-makers live here</h3>
+    <p style="margin-bottom:8px">CFOs, construction owners, medical supply directors — all on LinkedIn. Post 3x/week: pull a key stat from your blog ("60% of construction businesses have a 60-day payment gap"), add a short insight, and link to the full post. Tag your industries. Use polls ("What's your biggest cash flow challenge?") to drive comments and reach.</p>
+    <ul><li>Carousel posts from guides perform best for B2B financial content</li><li>Founder-voice posts ("why we started Clear Capital") outperform brand posts</li></ul>
+  </div>
+  <div class="g2">
+    <div class="card go">
+      <span class="pill pg">Email (lead nurture)</span>
+      <h3>3-sequence drip</h3>
+      <ul>
+        <li><strong>Email 1 (day 0):</strong> Deliver the guide + quick win tip</li>
+        <li><strong>Email 2 (day 3):</strong> MCA vs loan explainer — position Clear Capital</li>
+        <li><strong>Email 3 (day 7):</strong> Social proof (Roberto/Tanya/Darnell stories) + apply CTA</li>
+        <li>Weekly newsletter: 1 insight, 1 industry stat, 1 link to new blog post</li>
+      </ul>
+    </div>
+    <div class="card gr">
+      <span class="pill pgr">Outreach & links</span>
+      <h3>Backlink targets</h3>
+      <ul>
+        <li>Owner Operator Independent Drivers Assoc. (OOIDA) — trucking</li>
+        <li>National Restaurant Association blog — restaurants</li>
+        <li>Associated General Contractors — construction</li>
+        <li>HIDA (healthcare distribution) — medical supplies</li>
+        <li>Finance Magnates, Benzinga — MCA/fintech press</li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+  <div class="card">
+    <span class="pill pn">Quick win — repurpose what you already have</span>
+    <p>Your existing homepage copy, testimonials, FAQ, and calculator are all strong content assets. Repurpose them immediately: the FAQ becomes 8 blog post seeds, the calculator concept becomes a LinkedIn carousel, and Roberto/Tanya/Darnell's testimonials become 3 case study posts — with zero new research needed.</p>
+  </div>
+  <button class="cta" onclick="sendPrompt('Write me the first blog post for Clear Capital: How Trucking Companies Get Funded Between Loads — optimized for SEO with a CTA to apply ↗')">Write my first blog post ↗</button>
+</div>
+</div>
+
+<script>
+function sw(id){
+  document.querySelectorAll('.tab').forEach((t,i)=>{
+    const ids=['audit','keywords','content','timeline','promo'];
+    t.classList.toggle('on', ids[i]===id);
+  });
+  document.querySelectorAll('.sec').forEach(s=>{
+    s.classList.toggle('on', s.id===id);
+  });
+}
+</script>
